@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK.PAPER.SCISSORS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>ROCK. PAPER. SCISSORS.</h1>
+        <div class="flex-container">
+            <div class="current">Current Score: <span class="score">
+                <span class="youscore">0</span>/<span class="compscore">0</span>
+            </span></div>
+            <div class="res"><button class="restart">RESTART</button></div>
+        </div>
+        <div class="flexbox">
+            <div class="comp">
+                <div class="grid">
+                    <div class="heading">COMPUTER</div>
+                    <button class="icon rock inactive" disabled id="rockc">
+                        <img src="./fist.png">
+                    </button>
+                    <button class="icon paper inactive" disabled id="paperc">
+                        <img src="./hello.png">
+                    </button>
+                    <button class="icon scissors inactive" disabled id="scic">
+                        <img src="./two.png">
+                    </button>
+                </div>
+            </div>
+            <div class="you">
+                <div class="grid">
+                    <div class="heading">YOU</div>
+                    <button class="icon rock" id="rocky">
+                        <img src="./fist.png" width="100">
+                    </button>
+                    <button class="icon paper" id="papery">
+                        <img src="./hello.png" width="100">
+                    </button>
+                    <button class="icon scissors" id="sciy">
+                        <img src="./two.png" width="100">
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js" char="utf-8"></script>
+</body>
+</html>
